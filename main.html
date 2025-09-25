@@ -12,7 +12,7 @@
 	
 <form class="row g-3">
 	<h1>Internship Form</h1>
-  <div class="col-md-4">
+  <div class="col-md-4" id="first-name-input">
     <label for="validationServer01" class="form-label">First Name</label>
     <input type="text" class="form-control is-invalid" id="validationServer01" required>
 <div id="validationServer01Feedback" class="invalid-feedback">
@@ -20,23 +20,23 @@
     </div>
 	  
   </div>
-  <div class="col-md-4">
+  <div class="col-md-4" id="last-name-input">
     <label for="validationServer02" class="form-label">Last Name</label>
     <input type="text" class="form-control is-invalid" id="validationServer02" required>
     <div id="validationServer02Feedback" class="invalid-feedback">
       Last name required!
     </div>
   </div>
-  <div class="col-md-4">
+  <div class="col-md-4" id="email-input">
     <label for="validationServerUsername" class="form-label">Email Address</label>
     <div class="input-group has-validation">
-      <input type="text" class="form-control is-invalid" placeholder="xyz@abc.com" id="validationServerUsername" aria-describedby="inputGroupPrepend3 validationServerUsernameFeedback" required>
+      <input type="email" class="form-control is-invalid" placeholder="xyz@abc.com" id="validationServerUsername" aria-describedby="inputGroupPrepend3 validationServerUsernameFeedback" required>
       <div id="validationServerUsernameFeedback" class="invalid-feedback">
         Email required!
       </div>
     </div>
   </div>
-  <div class="col-md-6">
+  <div class="col-md-6" id="college-input">
     <label for="validationServer03" class="form-label">College</label>
     <input type="text" class="form-control is-invalid" id="validationServer03" aria-describedby="validationServer03Feedback" required>
     <div id="validationServer03Feedback" class="invalid-feedback">
@@ -56,7 +56,7 @@
       Please select a valid Graduation Year.
     </div>
   </div>
-  <div class="col-md-3">
+  <div class="col-md-3" id="roll-no-input">
     <label for="validationServer05" class="form-label">Roll No.</label>
     <input type="text" class="form-control is-invalid" id="validationServer05" aria-describedby="validationServer05Feedback" required>
     <div id="validationServer05Feedback" class="invalid-feedback">
@@ -65,7 +65,7 @@
   </div>
   <div class="col-12">
     <div class="form-check">
-      <input class="form-check-input is-invalid" type="checkbox" value="" id="invalidCheck3" aria-describedby="invalidCheck3Feedback" required>
+      <input class="form-check-input is-invalid" id="conditions-checkbox" type="checkbox" value="" id="invalidCheck3" aria-describedby="invalidCheck3Feedback" required>
       <label class="form-check-label" for="invalidCheck3">
         Agree to terms and conditions
       </label>
